@@ -1,66 +1,42 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/sections/Hero";
+import Stats from "@/components/sections/Stats";
+import BentoGallery from "@/components/sections/BentoGallery";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main>
+      <Navbar />
+      <Hero />
+      <Stats />
+      
+      <section style={{ padding: '8rem 2rem', textAlign: 'center', color: 'var(--text-light)' }}>
+        <div className="container">
+          <h2 style={{ fontSize: '3.5rem', marginBottom: '2rem', color: 'var(--accent-gold)' }}>
+            Un Legado Crujiente
+          </h2>
+          <p style={{ maxWidth: '800px', margin: '0 auto', fontSize: '1.25rem', opacity: 0.9 }}>
+            Desde que abrimos nuestras puertas en 1949, la Churrería La Fama se ha convertido en un punto de referencia cultural en Zaragoza. 
+            Nuestra receta no ha cambiado: solo los mejores ingredientes, paciencia y un toque de historia en cada porra.
           </p>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <BentoGallery />
+
+      <footer style={{ padding: '4rem 2rem', backgroundColor: '#120A07', borderTop: '1px solid rgba(200, 140, 58, 0.2)', textAlign: 'center' }}>
+        <div className="container">
+          <p style={{ color: 'var(--accent-gold)', fontFamily: 'var(--font-heading)', fontSize: '1.5rem', marginBottom: '1rem' }}>
+            CHURRERÍA LA FAMA
+          </p>
+          <p>Calle Prudencio, 25, 50003 Zaragoza (Casco Antiguo)</p>
+          <p>Teléfono: 976 39 37 54</p>
+          <p>[DATO PENDIENTE: Email de contacto]</p>
+          <div style={{ marginTop: '2rem', opacity: 0.5, fontSize: '0.8rem' }}>
+            &copy; {new Date().getFullYear()} Churrería La Fama. Todos los derechos reservados.
+          </div>
         </div>
-      </main>
-    </div>
+      </footer>
+    </main>
   );
 }
