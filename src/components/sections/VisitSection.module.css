@@ -143,3 +143,35 @@
     position: static;
   }
 }
+
+@media (max-width: 768px) {
+  .visitSection {
+    padding: 6rem 1.25rem;
+  }
+
+  .header {
+    margin-bottom: 3rem;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+  }
+
+  .card {
+    padding: 2rem 1.5rem;
+  }
+
+  .cardTitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .mapContainer {
+    height: 300px;
+  }
+
+  .hoursRow {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+}

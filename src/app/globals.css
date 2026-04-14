@@ -18,6 +18,12 @@
   --container-max-width: 1200px;
 }
 
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 5rem 1.25rem;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

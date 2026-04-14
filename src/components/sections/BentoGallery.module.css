@@ -71,7 +71,44 @@
 }
 
 @media (max-width: 768px) {
+  .gallery {
+    padding: 4rem 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .grid {
     grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 160px;
+    gap: 0.75rem;
+  }
+
+  /* Evitar que los spans rompan el grid en 2 columnas */
+  .large,
+  .medium {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+
+  .small {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media (max-width: 420px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+  }
+
+  .large,
+  .medium,
+  .small {
+    grid-column: span 1;
+    grid-row: span 1;
   }
 }

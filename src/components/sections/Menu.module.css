@@ -33,7 +33,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 4rem;
 }
 
@@ -97,7 +97,28 @@
 }
 
 @media (max-width: 768px) {
+  .menuSection {
+    padding: 6rem 1.5rem;
+  }
+
   .grid {
     grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .header {
+    margin-bottom: 4rem;
+  }
+
+  .categoryName {
+    font-size: 2rem;
+  }
+
+  .itemName {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 2rem 1.5rem;
   }
 }
