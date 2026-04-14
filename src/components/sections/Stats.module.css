@@ -32,17 +32,17 @@
   opacity: 0.8;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .statsSection {
     padding: 4rem 1.5rem;
   }
 
   .grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 
   .value {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }
