@@ -12,7 +12,7 @@ export default function BentoGallery() {
   ];
 
   return (
-    <section className={styles.gallery}>
+    <section id="galeria" className={styles.gallery}>
       <div className="container">
         <h2 className={styles.sectionTitle}>Nuestra Maestría</h2>
         <div className={styles.grid}>

@@ -28,7 +28,7 @@ export default function HistoryContent() {
   ];
 
   return (
-    <section className={styles.historySection}>
+    <section id="historia" className={styles.historySection}>
       <div className="container">
         <header className={styles.header}>
           <h1 className={styles.title}>Tres Generaciones <br /> de Maestría</h1>

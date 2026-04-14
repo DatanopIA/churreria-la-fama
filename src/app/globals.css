@@ -38,6 +38,7 @@ body {
   color: var(--text-light);
   font-family: var(--font-body);
   line-height: 1.6;
+  scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6 {

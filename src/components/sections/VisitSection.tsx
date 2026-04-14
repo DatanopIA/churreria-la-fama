@@ -5,7 +5,7 @@ import styles from './VisitSection.module.css';
 
 export default function VisitSection() {
   return (
-    <section className={styles.visitSection}>
+    <section id="visitanos" className={styles.visitSection}>
       <div className="container">
         <header className={styles.header}>
           <h1 className={styles.title}>Estamos en el Corazón <br /> de Zaragoza</h1>

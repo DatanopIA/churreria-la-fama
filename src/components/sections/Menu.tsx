@@ -46,7 +46,7 @@ export default function Menu() {
   };
 
   return (
-    <section className={styles.menuSection}>
+    <section id="carta" className={styles.menuSection}>
       <div className="container">
         <motion.div 
           className={styles.header}
