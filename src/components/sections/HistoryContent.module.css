@@ -1,0 +1,129 @@
+.historySection {
+  padding: 10rem 1rem;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+.title {
+  font-size: clamp(3rem, 10vw, 7rem);
+  color: var(--bg-cream);
+  line-height: 0.85;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  font-size: 1.5rem;
+  font-family: var(--font-body);
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(200, 140, 58, 0.2);
+  transform: translateX(-50%);
+}
+
+.milestone {
+  display: flex;
+  width: 50%;
+  position: relative;
+}
+
+.milestone:nth-child(even) {
+  margin-left: 50%;
+  padding-left: 3rem;
+}
+
+.milestone:nth-child(odd) {
+  margin-right: 50%;
+  padding-right: 3rem;
+  text-align: right;
+}
+
+.milestone::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--accent-gold);
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.milestone:nth-child(even)::after {
+  left: -6px;
+}
+
+.milestone:nth-child(odd)::after {
+  right: -6px;
+}
+
+.milestoneContent {
+  background: rgba(42, 26, 20, 0.4);
+  padding: 2.5rem;
+  border: 1px solid rgba(200, 140, 58, 0.1);
+  border-radius: 4px;
+}
+
+.year {
+  display: block;
+  font-size: 3rem;
+  font-family: var(--font-heading);
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.milestoneTitle {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--bg-cream);
+}
+
+.milestoneDesc {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+  
+  .milestone {
+    width: 100% !important;
+    margin: 0 !important;
+    padding-left: 4rem !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
+  
+  .milestone::after {
+    left: 14px !important;
+  }
+}

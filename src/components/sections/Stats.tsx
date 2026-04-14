@@ -6,9 +6,9 @@ import styles from './Stats.module.css';
 
 export default function Stats() {
   const statsData = [
-    { label: "Años de Tradición", value: 75, suffix: "+" },
-    { label: "Reseñas en Google", value: 3500, suffix: "+" },
-    { label: "Abiertos cada día", value: 365, suffix: "" },
+    { label: "AÑOS DE TRADICIÓN", value: 75, suffix: "+" },
+    { label: "RESEÑAS EN GOOGLE", value: 3500, suffix: "+" },
+    { label: "ABIERTOS CADA DÍA", value: 365, suffix: "" },
   ];
 
   return (

@@ -1,36 +1,32 @@
 .statsSection {
-  padding: 4rem 1rem;
-  background-color: var(--bg-dark);
-  color: var(--text-light);
-  border-top: 1px solid rgba(200, 140, 58, 0.1);
-  border-bottom: 1px solid rgba(200, 140, 58, 0.1);
+  background-color: var(--bg-cream);
+  padding: 6rem 1rem;
+  color: var(--text-dark);
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
   text-align: center;
 }
 
 .statItem {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
   align-items: center;
 }
 
 .value {
-  font-family: var(--font-heading);
   font-size: 4rem;
-  font-weight: 800;
-  color: var(--accent-gold);
+  font-family: var(--font-heading);
+  color: var(--accent-rust);
   line-height: 1;
+  font-weight: 800;
 }
 
 .label {
-  font-family: var(--font-body);
-  font-size: 1rem;
-  text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-top: 0.5rem;
   opacity: 0.8;

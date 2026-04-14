@@ -1,0 +1,36 @@
+.story {
+  padding: var(--section-padding);
+  text-align: center;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  position: relative;
+}
+
+.title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  color: var(--accent-gold);
+  margin-bottom: 3rem;
+  letter-spacing: 0.05em;
+}
+
+.description {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.35rem;
+  line-height: 1.8;
+  opacity: 0.9;
+  font-family: var(--font-body);
+}
+
+.description strong {
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background-color: var(--accent-gold);
+  margin: 4rem auto 0;
+  opacity: 0.5;
+}
