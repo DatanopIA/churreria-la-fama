@@ -2,7 +2,9 @@ import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import Stats from "@/components/sections/Stats";
 import Story from "@/components/sections/Story";
+import Testimonials from "@/components/sections/Testimonials";
 import BentoGallery from "@/components/sections/BentoGallery";
+import VisitSection from "@/components/sections/VisitSection";
 import Footer from "@/components/layout/Footer";
 
 export default function Home() {
@@ -12,7 +14,9 @@ export default function Home() {
       <Hero />
       <Story />
       <Stats />
+      <Testimonials />
       <BentoGallery />
+      <VisitSection />
       <Footer />
     </main>
   );

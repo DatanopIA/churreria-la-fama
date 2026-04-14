@@ -57,15 +57,15 @@ export default function VisitSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className={styles.mapPlaceholder}>
-              <div className={styles.mapOverlay}>
-                <p>UBICACIÓN PRIVILEGIADA</p>
-                <span>Calle Prudencio, 25</span>
-              </div>
-              {/* Here we could put a real Google Maps iframe if we had the key, 
-                  for now we'll use a stylized div */}
-              <div className={styles.mapBackground}></div>
-            </div>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d2983.3323!2d-0.8807!3d41.6565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5914ed00000001%3A0x6d5c64c23f2f2e2e!2sChurrer%C3%ADa%20La%20Fama!5e0!3m2!1ses!2ses!4v1713088000000!5m2!1ses!2ses" 
+              width="100%" 
+              height="100%" 
+              style={{ border: 0, minHeight: '450px' }} 
+              allowFullScreen 
+              loading="lazy" 
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
           </motion.div>
         </div>
       </div>

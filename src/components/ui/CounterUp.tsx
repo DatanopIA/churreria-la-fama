@@ -18,15 +18,26 @@ export default function CounterUp({ end, duration = 2, suffix = "" }: CounterUpP
     if (!isInView) return;
 
     let startTime: number | null = null;
+    let animationFrame: number;
+
     const step = (timestamp: number) => {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
+      
       setCount(Math.floor(progress * end));
+
       if (progress < 1) {
-        window.requestAnimationFrame(step);
+        animationFrame = window.requestAnimationFrame(step);
       }
     };
-    window.requestAnimationFrame(step);
+
+    animationFrame = window.requestAnimationFrame(step);
+
+    return () => {
+      if (animationFrame) {
+        window.cancelAnimationFrame(animationFrame);
+      }
+    };
   }, [end, duration, isInView]);
 
   return <span ref={ref}>{count}{suffix}</span>;

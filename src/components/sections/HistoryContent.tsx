@@ -16,9 +16,9 @@ export default function HistoryContent() {
       description: "La Fama se convierte en el punto de encuentro obligatorio para los zaragozanos tras las fiestas del Pilar y las mañanas de domingo."
     },
     {
-      year: "2015",
-      title: "Reconocimiento Nacional",
-      description: "National Geographic nos destaca como una de las paradas gastronómicas imprescindibles en el Casco Antiguo de Zaragoza."
+      year: "2024",
+      title: "Mejor Chocolate de Zaragoza",
+      description: "National Geographic nos reconoce como la parada obligatoria para disfrutar del mejor chocolate con churros de la ciudad."
     },
     {
       year: "Hoy",

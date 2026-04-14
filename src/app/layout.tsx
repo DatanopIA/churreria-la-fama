@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Churrería La Fama | Zaragoza 1949",
-  description: "Tradicíon, pasión y el mejor chocolate con churros de Zaragoza desde 1949. National Geographic lo confirma: una experiencia obligatoria.",
+  title: "Churrería La Fama | Zaragoza — El Chocolate que enamora a National Geographic",
+  description: "Tradicíon, pasión y el mejor chocolate con churros de Zaragoza desde 1949. National Geographic lo confirma: el mejor de la ciudad.",
 };
 
 export default function RootLayout({
