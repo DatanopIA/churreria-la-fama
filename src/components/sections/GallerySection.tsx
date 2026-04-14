@@ -25,7 +25,7 @@ export default function GallerySection() {
 
   const itemVariants = {
     hidden: { opacity: 0, scale: 0.9 },
-    visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: "easeOut" } }
+    visible: { opacity: 1, scale: 1, transition: { duration: 0.6 } }
   };
 
   return (
