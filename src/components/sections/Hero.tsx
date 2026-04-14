@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import styles from './Hero.module.css';
 import WordReveal from '../ui/WordReveal';
 import MagneticButton from '../ui/MagneticButton';
@@ -31,16 +32,16 @@ export default function Hero() {
           <p className={styles.subtitle}>Desde 1949, los reyes del desayuno en Zaragoza.</p>
           
           <div style={{ display: 'flex', justifyContent: 'center', gap: '2rem', flexWrap: 'wrap' }}>
-            <a href="#carta">
+            <Link href="/carta">
               <MagneticButton className="btn-primary">
                 Ver la Carta
               </MagneticButton>
-            </a>
-            <a href="#visitanos">
+            </Link>
+            <Link href="/visita-nos">
               <MagneticButton className="btn-primary" style={{ backgroundColor: 'transparent', border: '1px solid var(--accent-gold)', color: 'var(--accent-gold)' }}>
                 Cómo Llegar
               </MagneticButton>
-            </a>
+            </Link>
           </div>
         </motion.div>
       </div>

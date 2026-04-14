@@ -27,11 +27,11 @@ export default function Navbar() {
   }, [isMenuOpen]);
 
   const links = [
-    { href: '#inicio', label: 'Inicio' },
-    { href: '#historia', label: 'Historia' },
-    { href: '#carta', label: 'Carta' },
-    { href: '#galeria', label: 'Galería' },
-    { href: '#visitanos', label: 'Visítanos' },
+    { href: '/', label: 'Inicio' },
+    { href: '/historia', label: 'Historia' },
+    { href: '/carta', label: 'Carta' },
+    { href: '/galeria', label: 'Galería' },
+    { href: '/visita-nos', label: 'Visítanos' },
   ];
 
   return (
